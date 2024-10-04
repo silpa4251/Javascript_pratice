@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function longestLength(str) {
+            let words = str.split(" ");
+            let longest = words.reduce((maxlen,word)=> {
+                return Math.max(maxlen,word.length);
+            },0 );
+            return longest;
+        }
+        console.log(longestLength("Welcome to Bridgeon"));
+        
+    </script>
+</body>
+</html>
