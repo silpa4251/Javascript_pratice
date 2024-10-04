@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fibonacci series</title>
+</head>
+<body>
+    <script>
+        function fibonacci(num){
+            let fib = [0, 1];
+            for(let i = 2; i <= num; i++){
+                fib[i] = fib[i-1] + fib[i-2];
+            }
+            return fib;
+
+        }
+        let num = 10;
+        let fibSeries = fibonacci(num);
+        // console.log(`Fibonacci series up to ${num}th term:`);
+        // for(let i = 0; i < fibSeries.length; i++){
+        //     console.log(fibSeries[i]);
+        // }
+        document.write(`Fibonacci series up to ${num}th term: ${fibSeries.join(', ')}`);
+
+    </script>
+</body>
+</html>

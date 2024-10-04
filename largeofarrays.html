@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function findLargest(arr){
+            let large=[];
+            for(let i=0; i<arr.length; i++){
+                large.push(Math.max(...arr[i]));
+            }
+            return large;
+            
+        }
+        let arr=[[4,2,7,1],[20,70,90,40],[1,2,0]];
+        console.log(findLargest(arr));
+    </script>
+</body>
+</html>

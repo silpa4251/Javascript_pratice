@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=script, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function reverseCaseAndOrder(str) {
+    let reversedStr = str.split('').reverse().join('');
+    let result = '';
+
+    for (let char of reversedStr) {
+        if (char === char.toUpperCase()) {
+            result += char.toLowerCase();
+        } else {
+            result += char.toUpperCase();
+        }
+    }
+
+    return result;
+}
+
+let input = "HeLiO wOrldSDE";
+console.log(reverseCaseAndOrder(input));
+    </script>
+</body>
+</html>

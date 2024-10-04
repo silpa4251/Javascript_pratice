@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>stringodd</title>
+</head>
+<body>
+    <script>
+    //     function oddEven(){
+    //         if(str.length%2==0){
+    //             return true;
+    //     }
+    //     else{
+    //             return false;
+    //     }
+    // }
+    // let str=prompt("Enter a string");
+    // alert(oddEven(str));
+
+
+
+    function oddEven(){
+            if(str.length%2==0){
+                mid=str.length/2;
+                 return str.slice(mid-1, mid+1);
+                 
+              }
+        else{
+                 return str.charAt(str.length/2);
+        }
+    }
+    let str=prompt("Enter a string");
+    alert(oddEven(str));
+    </script>
+</body>
+</html>

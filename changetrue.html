@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function bridgeonSwitch(arr){
+            let value=true;
+            let res=[];
+            for(let i=0;i<arr.length;i++){
+               if(arr[i]=="bridgeon"){
+                value=!value;
+               }
+               res.push(value);
+            }
+            return res;
+        }
+    console.log(bridgeonSwitch(["bridgeon", 10101, 3.14, 53, "bridgeon"]));
+    </script>
+</body>
+</html>

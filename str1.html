@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>camal</title>
+</head>
+<body>
+    <script>
+        let str="how are you";
+        let arr=str.split(" ");
+            for (let i=1; i<arr.length-1; i++){
+            arr[i]=arr[i][0].toUpperCase()+arr[i].slice(1);
+            }
+        document.write(arr.join(""));
+    </script>
+
+</body>
+</html>

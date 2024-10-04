@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function ageMem(arr) {
+            
+            let young = arr[0].age;
+            let old = arr[0].age;
+
+            for (let i = 1; i < arr.length; i++) {
+                if (arr[i].age < young) {
+                    young = arr[i].age;
+                }
+                if (arr[i].age > old) {
+                    old = arr[i].age;
+                }
+            }
+
+            let res = [young, old, old - young];
+            return res;
+        }
+
+        console.log(ageMem([{ name: "Mark", age: 38 },
+                             { name: "Charlie", age: 10 },
+                             { name: "Anna", age: 25 }]));
+    </script>
+</body>
+</html>

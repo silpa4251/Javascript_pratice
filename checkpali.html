@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function checkPalindrome(arr){
+            let check=[];
+            for(let i=0; i<arr.length; i++){
+                let rev=arr[i].split("").reverse().join("");
+                if(rev==arr[i]){
+                    check.push(arr[i]);
+                }
+            }
+            return check;
+        }
+        let arr=["madam", "level", "hello", "radar"];
+        console.log(checkPalindrome(arr));
+    </script>
+</body>
+</html>

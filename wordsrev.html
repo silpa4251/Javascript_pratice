@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function spinWords(str){
+           let words =str.split(" ");
+           for(let i=0; i<words.length;i++){
+            let letter=words[i];
+            if(letter.length>=5){
+                words[i]=letter.split("").reverse().join("");
+            }
+           }
+           return words.join(" ");
+        }
+        console.log(spinWords("Hey fellow warriors"));
+    </script>
+</body>
+</html>

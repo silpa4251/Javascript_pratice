@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a=2;
+        switch(a){
+            case 1:
+                console.log("Monday");
+                break;
+            case 2:
+                console.log("Tuesday");
+                break;
+            default:
+                console.log("Invalid argument");
+                break;
+        }
+
+        let x = 10;
+        for(let i=1; i<=x; i++){
+            console.log(i);
+        }
+        
+        let y = 10;
+        while(y>0){
+            console.log(y);
+            y--;
+        }
+
+        let z = 10;
+        do {
+            console.log(z);
+            z--;
+        } while(z>10);
+
+        let array = [1, 2, 3, 4, 5];
+        let sum = 0;
+        for (let i = 0; i < array.length; i++) {
+            sum += array[i];
+        }
+        console.log("Sum of all elements in the array:", sum);
+        console.log("Average of all elements in the array:", sum / array.length);
+    </script>
+</body>
+</html>
